@@ -1,5 +1,5 @@
-import './header.css';
 import React from 'react';
+import './header.css';
 import CallToAction from './CallToAction';
 import Socials from './Socials';
 
@@ -11,14 +11,14 @@ function Header() {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <h5>Hello, I'm</h5>
         <h1>Zheng Yi</h1>
         <h5 className="text-light">Frontend Developer</h5>
         <CallToAction />
         <Socials />
 
-        <div className="me">
-          <img src={avatar} alt="me" crossOrigin="anonymous" />
+        <div className="avatar">
+          <img src={avatar} alt="Avatar" crossOrigin="anonymous" />
         </div>
 
         <a href="#contact" className="scroll__down">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Projects() {
-  return <div className="App">Projects</div>;
+  return <section id="projects">Projects</section>;
 }
 
 export default Projects;
