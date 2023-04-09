@@ -11,7 +11,7 @@ function Header() {
       </div>
       <CTA />
       <div className="me">
-        <img src="" alt="" />
+        <img src="" alt="me" />
       </div>
     </header>
   );
