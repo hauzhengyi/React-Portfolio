@@ -1,7 +1,7 @@
 import React from 'react';
 import CV from '../../assets/Hau_Zheng_Yi_CV.pdf';
 
-function CTA() {
+function CallToAction() {
   return (
     <div className="cta">
       <a href={CV} download className="btn">
@@ -14,4 +14,4 @@ function CTA() {
   );
 }
 
-export default CTA;
+export default CallToAction;

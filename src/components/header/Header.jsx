@@ -1,5 +1,7 @@
 import React from 'react';
-import CTA from './CTA';
+import CallToAction from './CallToAction';
+import avatar from '../../assets/Avatar.png';
+import Socials from './Socials';
 
 function Header() {
   return (
@@ -9,10 +11,15 @@ function Header() {
         <h1>Zheng Yi</h1>
         <h5 className="text-light">Frontend Developer</h5>
       </div>
-      <CTA />
+      <CallToAction />
+
       <div className="me">
-        <img src="" alt="me" />
+        <img src={avatar} alt="me" />
       </div>
+
+      <a href="#contact" className="scroll__down">
+        Scroll Down
+      </a>
     </header>
   );
 }
