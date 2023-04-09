@@ -1,3 +1,4 @@
+import './about.css';
 import React from 'react';
 import { FaAward, FaGlobeAmericas } from 'react-icons/fa';
 import { MdSchool } from 'react-icons/md';

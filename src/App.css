@@ -75,10 +75,12 @@ section {
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 section > h2 {
+  margin-bottom: 3rem;
+  color: var(--color-accent);
 }
 
 .text-light {
