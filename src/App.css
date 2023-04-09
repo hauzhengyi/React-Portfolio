@@ -99,7 +99,7 @@ a {
 }
 
 .btn:hover {
-  color: var(--color-accent-alt);
+  color: var(--color-primary);
   background: var(--color-accent);
   border-color: transparent;
 }
