@@ -1,5 +1,7 @@
 import React from 'react';
 import { BsLinkedin } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 function Socials() {
   return (
@@ -8,10 +10,10 @@ function Socials() {
         <BsLinkedin />
       </a>
       <a href="https://github.com/hauzhengyi" target="_blank">
-        GitHub
+        <FaGithub />
       </a>
       <a href="mailto:hauzhengyi@hotmail.com" target="_blank">
-        Email
+        <MdEmail />
       </a>
     </div>
   );

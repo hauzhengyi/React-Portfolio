@@ -1,7 +1,11 @@
+import './header.css';
 import React from 'react';
 import CallToAction from './CallToAction';
-import avatar from '../../assets/Avatar.png';
 import Socials from './Socials';
+
+// import avatar from '../../assets/Avatar.png';
+const avatar =
+  'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/Avatar.png';
 
 function Header() {
   return (
@@ -10,16 +14,17 @@ function Header() {
         <h5>Hello I'm</h5>
         <h1>Zheng Yi</h1>
         <h5 className="text-light">Frontend Developer</h5>
-      </div>
-      <CallToAction />
+        <CallToAction />
+        <Socials />
 
-      <div className="me">
-        <img src={avatar} alt="me" />
-      </div>
+        <div className="me">
+          <img src={avatar} alt="me" crossOrigin="anonymous" />
+        </div>
 
-      <a href="#contact" className="scroll__down">
-        Scroll Down
-      </a>
+        <a href="#contact" className="scroll__down">
+          Scroll Down
+        </a>
+      </div>
     </header>
   );
 }
