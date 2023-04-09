@@ -15,16 +15,19 @@ function About() {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward />
+              <FaAward className="about__icon" />
               <h5>Something</h5>
+              <small>Something</small>
             </article>
             <article className="about__card">
-              <FaGlobeAmericas />
+              <FaGlobeAmericas className="about__icon" />
               <h5>Something</h5>
+              <small>Something</small>
             </article>
             <article className="about__card">
-              <MdSchool />
+              <MdSchool className="about__icon" />
               <h5>Something</h5>
+              <small>Something</small>
             </article>
           </div>
           <p>

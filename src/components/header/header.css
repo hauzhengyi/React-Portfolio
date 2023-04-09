@@ -68,9 +68,20 @@ header {
 /* ============= MEDIA QUERIES (MD) ============= */
 
 @media screen and (max-width: 1024px) {
+  header {
+    height: 62vh;
+  }
 }
 
 /* ============= MEDIA QUERIES (sm) ============= */
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .avatar {
+    width: 22rem;
+    height: 30rem;
+  }
 }

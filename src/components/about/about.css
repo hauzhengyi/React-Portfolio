@@ -40,8 +40,8 @@
 }
 
 .about__card {
-  background: transparent;
-  border: 1px solid var(--color-accent);
+  background: var(--color-secondary-alt);
+  border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -49,6 +49,66 @@
 }
 
 .about__card:hover {
-  background: var(--color-secondary);
-  border: 1px solid transparent;
+  background: transparent;
+  border: 1px solid var(--color-secondary);
+}
+
+.about__icon {
+  color: var(--color-accent);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-text-light);
+}
+
+/* ============= MEDIA QUERIES (MD) ============= */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__image-bg {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ============= MEDIA QUERIES (sm) ============= */
+
+@media screen and (max-width: 600px) {
+  .about__image-bg {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
 }
