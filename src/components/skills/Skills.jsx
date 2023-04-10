@@ -13,11 +13,11 @@ import {
   SiLaravel,
   SiPython,
   SiCplusplus,
+  SiLinux,
+  SiPytorch,
   SiGoogleads,
   SiGoogleanalytics,
   SiGoogletagmanager,
-  SiLinux,
-  SiPytorch,
 } from 'react-icons/si';
 import Skill from './Skill';
 
@@ -95,6 +95,12 @@ function Skills() {
               skill="GitHub"
               experience="Experienced"
             />
+            <Skill icon={<SiLinux />} skill="Linux" experience="Intermediate" />
+            <Skill
+              icon={<SiPytorch />}
+              skill="Pytorch"
+              experience="Intermediate"
+            />
             <Skill
               icon={<SiGoogleads />}
               skill="Google Ads"
@@ -109,12 +115,6 @@ function Skills() {
               icon={<SiGoogletagmanager />}
               skill="Google Tag Manager"
               experience="Experienced"
-            />
-            <Skill icon={<SiLinux />} skill="Linux" experience="Intermediate" />
-            <Skill
-              icon={<SiPytorch />}
-              skill="Pytorch"
-              experience="Intermediate"
             />
           </div>
         </div>
