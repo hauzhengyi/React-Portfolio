@@ -68,4 +68,8 @@
     width: 100%;
     padding: 2rem 1rem;
   }
+
+  .skills__details {
+    padding-left: 1.5rem;
+  }
 }
