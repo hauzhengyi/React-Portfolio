@@ -6,7 +6,7 @@ function Skill({ icon, skill, experience }) {
       <div className="skills__details-icon">{icon}</div>
       <div>
         <h4>{skill}</h4>
-        <small className="text-light">{experience}</small>
+        <small>{experience}</small>
       </div>
     </article>
   );

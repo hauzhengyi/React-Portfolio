@@ -1,0 +1,71 @@
+.experience__timeline {
+  position: relative;
+  min-height: 10rem;
+  padding: 3rem 0;
+}
+
+.experience__line {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-secondary);
+}
+
+.experience__line::before,
+.experience__line::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.experience__line::after {
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+/* .experience__card {
+  display: flex;
+  opacity: 0;
+  transform: translate(-100%);
+  position: relative;
+  z-index: 1;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  min-height: 3rem;
+  transition: var(--transition);
+} */
+
+.experience__card:nth-child(odd) {
+  flex-direction: row-reverse;
+  transform: translate(100%);
+}
+
+.experience__dot {
+  position: absolute;
+  display: block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+}
+
+.experience__title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
