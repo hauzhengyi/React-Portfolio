@@ -66,6 +66,14 @@
   transform: translate(-50%, -50%);
 }
 
+.experiences__card > h4 {
+  color: var(--color-accent);
+}
+
+.experiences__card::hover {
+  background-color: var(--color-secondary);
+}
+
 .experiences__event:nth-child(even) .experiences__card::after {
   left: 100%;
 }
@@ -100,8 +108,4 @@
 
 .experiences__event:nth-child(even) .experiences__dot::after {
   transform: translate(-100%);
-}
-
-.experiences__title > h4 {
-  color: var(--color-accent);
 }

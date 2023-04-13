@@ -1,5 +1,45 @@
 import './experiences.css';
 import React from 'react';
+import Experience from './Experience';
+
+const experiences = [
+  {
+    id: 'xmum_enroll',
+    title: 'Enrolled at Xiamen University Malaysia',
+    company: 'Xiamen University Malaysia',
+    date: 'August 2018',
+    detail: '',
+  },
+  {
+    id: 'sunline',
+    title: 'Java Developer Intern',
+    company: 'Sunline Technology (Malaysia) Sdn Bhd',
+    date: 'August 2021',
+    detail: '',
+  },
+  {
+    id: 'saratix',
+    title: 'Web Developer Intern',
+    company: 'Saratix (Megah Berkah Sdn Bhd)',
+    date: 'Feb 2022',
+    detail: '',
+  },
+  {
+    id: 'xmum_grad',
+    title:
+      'Bachelor of Engineering in Computer Science and Technology (Honours)',
+    company: 'Xiamen University Malaysia',
+    date: 'March 2022',
+    detail: '',
+  },
+  {
+    id: 'tdcx',
+    title: 'Frontend Developer',
+    company: 'TDCX (MY) Sdn Bhd',
+    date: 'May 2022',
+    detail: '',
+  },
+];
 
 function Experiences() {
   return (
@@ -9,53 +49,9 @@ function Experiences() {
       <div className="container experiences__container">
         <div className="experiences__timeline">
           <div className="experiences__line"></div>
-          <div className="experiences__event">
-            <div className="experiences__dot"></div>
-            <div className="experiences__card">
-              <div className="experiences__title">
-                <h4>Java Developer Intern</h4>
-                <h5>Sunline Technology (Malaysia) Sdn Bhd</h5>
-              </div>
-              <h6>August 2021</h6>
-              <small className="event__description text-light"></small>
-            </div>
-          </div>
-          <div className="experiences__event">
-            <div className="experiences__dot"></div>
-            <div className="experiences__card">
-              <div className="experiences__title">
-                <h4>Web Developer Intern</h4>
-                <h5>Saratix (Megah Berkah Sdn Bhd)</h5>
-              </div>
-              <h6>Feb 2022</h6>
-              <small className="event__description text-light"></small>
-            </div>
-          </div>
-          <div className="experiences__event">
-            <div className="experiences__dot"></div>
-            <div className="experiences__card">
-              <div className="experiences__title">
-                <h4>
-                  Bachelor of Engineering in Computer Science and Technology
-                  (Honours)
-                </h4>
-                <h5>Xiamen University Malaysia</h5>
-              </div>
-              <h6>March 2022</h6>
-              <small className="event__description text-light"></small>
-            </div>
-          </div>
-          <div className="experiences__event">
-            <div className="experiences__dot"></div>
-            <div className="experiences__card">
-              <div className="experiences__title">
-                <h4>Frontend Developer</h4>
-                <h5>TDCX (MY) Sdn Bhd</h5>
-              </div>
-              <h6>May 2022</h6>
-              <small className="event__description text-light"></small>
-            </div>
-          </div>
+          {experiences.map((experience) => {
+            return <Experience key={experience.id} experience={experience} />;
+          })}
         </div>
       </div>
     </section>

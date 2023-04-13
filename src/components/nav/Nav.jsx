@@ -13,7 +13,7 @@ function Nav() {
       <a href="#about">
         <BiUser />
       </a>
-      <a href="#experience">
+      <a href="#experiences">
         <MdWorkOutline />
       </a>
       <a href="#skills">
