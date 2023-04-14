@@ -4,24 +4,10 @@ import Experience from './Experience';
 
 const experiences = [
   {
-    id: 'xmum_enroll',
-    title: 'Enrolled at Xiamen University Malaysia',
-    company: 'Xiamen University Malaysia',
-    date: 'August 2018',
-    detail: '',
-  },
-  {
-    id: 'sunline',
-    title: 'Java Developer Intern',
-    company: 'Sunline Technology (Malaysia) Sdn Bhd',
-    date: 'August 2021',
-    detail: '',
-  },
-  {
-    id: 'saratix',
-    title: 'Web Developer Intern',
-    company: 'Saratix (Megah Berkah Sdn Bhd)',
-    date: 'Feb 2022',
+    id: 'tdcx',
+    title: 'Frontend Developer',
+    company: 'TDCX (MY) Sdn Bhd',
+    date: 'May 2022',
     detail: '',
   },
   {
@@ -33,10 +19,24 @@ const experiences = [
     detail: '',
   },
   {
-    id: 'tdcx',
-    title: 'Frontend Developer',
-    company: 'TDCX (MY) Sdn Bhd',
-    date: 'May 2022',
+    id: 'saratix',
+    title: 'Web Developer Intern',
+    company: 'Saratix (Megah Berkah Sdn Bhd)',
+    date: 'Feb 2022',
+    detail: '',
+  },
+  {
+    id: 'sunline',
+    title: 'Software Developer Intern',
+    company: 'Sunline Technology (Malaysia) Sdn Bhd',
+    date: 'August 2021',
+    detail: '',
+  },
+  {
+    id: 'xmum_enroll',
+    title: 'Enrolment',
+    company: 'Xiamen University Malaysia',
+    date: 'August 2018',
     detail: '',
   },
 ];

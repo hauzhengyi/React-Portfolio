@@ -70,6 +70,10 @@
   color: var(--color-accent);
 }
 
+.experiences__card > small {
+  display: block;
+}
+
 .experiences__card::hover {
   background-color: var(--color-secondary);
 }
