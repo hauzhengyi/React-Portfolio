@@ -6,7 +6,7 @@ import { FiCodesandbox } from 'react-icons/fi';
 
 function Nav() {
   return (
-    <nav>
+    <nav id="nav">
       <a href="#">
         <BiHome />
       </a>

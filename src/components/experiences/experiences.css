@@ -116,3 +116,11 @@
 .experiences__event:nth-child(even) .experiences__dot::after {
   transform: translate(-100%);
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+/* ============= MEDIA QUERIES (sm) ============= */
+
+@media screen and (max-width: 600px) {
+}

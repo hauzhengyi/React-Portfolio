@@ -39,6 +39,10 @@ header {
   background-color: var(--color-accent);
 }
 
+.header__socials a * {
+  transition: none;
+}
+
 /* ============= AVATAR ============= */
 
 .avatar {
@@ -67,7 +71,7 @@ header {
 
 /* ============= MEDIA QUERIES (MD) ============= */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-height: 900px) {
   header {
     height: 62vh;
   }

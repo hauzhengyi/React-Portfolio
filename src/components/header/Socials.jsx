@@ -16,7 +16,7 @@ function Socials() {
       <a
         href="https://github.com/hauzhengyi"
         target="_blank"
-        className="socials__githun"
+        className="socials__github"
       >
         <FaGithub />
       </a>
