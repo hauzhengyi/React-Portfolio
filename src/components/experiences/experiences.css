@@ -42,15 +42,22 @@
 
 .experiences__card {
   border: 1px solid var(--color-secondary);
+  background-color: transparent;
   position: relative;
   border-radius: 1rem;
   margin-inline: auto;
   padding: 1rem;
   min-width: 15rem;
-  max-width: 25rem;
+  max-width: 20rem;
   left: 5rem;
   transform: translate(50%);
   align-self: center;
+  transition: var(--transition);
+}
+
+.experiences__card:hover {
+  border-color: transparent;
+  background-color: var(--color-secondary-alt);
 }
 
 .experiences__card::after {
@@ -72,10 +79,6 @@
 
 .experiences__card > small {
   display: block;
-}
-
-.experiences__card::hover {
-  background-color: var(--color-secondary);
 }
 
 .experiences__event:nth-child(even) .experiences__card::after {

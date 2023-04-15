@@ -1,7 +1,8 @@
 import './about.css';
 import React from 'react';
-import { FaAward, FaGlobeAmericas } from 'react-icons/fa';
+import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { MdSchool } from 'react-icons/md';
+import { RiComputerFill } from 'react-icons/ri';
 
 function About() {
   return (
@@ -16,18 +17,18 @@ function About() {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Something</h5>
-              <small>Something</small>
+              <h5>XMUM Hackathon</h5>
+              <small>2019 Hackathon Award Winner</small>
             </article>
             <article className="about__card">
-              <FaGlobeAmericas className="about__icon" />
-              <h5>Something</h5>
-              <small>Something</small>
+              <RiComputerFill className="about__icon" />
+              <h5>Computer Enthusiast</h5>
+              <small>Loves Building Computers</small>
             </article>
             <article className="about__card">
-              <MdSchool className="about__icon" />
-              <h5>Something</h5>
-              <small>Something</small>
+              <FaFistRaised className="about__icon" />
+              <h5>Cooperative & Independent</h5>
+              <small>Solves problems with Minimal Help</small>
             </article>
           </div>
           <p>

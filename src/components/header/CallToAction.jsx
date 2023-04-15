@@ -5,17 +5,17 @@ const CV =
 
 function CallToAction() {
   return (
-    <div className="callToAction">
+    <div className="callToAction header__calltoaction">
       <a
         href={CV}
         download
-        className="btn"
+        className="btn calltoaction__cv"
         crossOrigin="anonymous"
         target="_blank"
       >
         Download CV
       </a>
-      <a href="#contact" className="btn btn-cta">
+      <a href="#contact" className="btn btn-cta calltoaction__contact">
         Get in Touch
       </a>
     </div>

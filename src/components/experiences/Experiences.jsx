@@ -34,7 +34,7 @@ const experiences = [
   },
   {
     id: 'xmum_enroll',
-    title: 'Enrolment',
+    title: 'Enrolled at Xiamen University Malaysia',
     company: 'Xiamen University Malaysia',
     date: 'August 2018',
     detail: '',
