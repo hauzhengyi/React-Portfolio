@@ -3,6 +3,10 @@ import React from 'react';
 import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { RiComputerFill } from 'react-icons/ri';
 
+// import photo from '../../assets/About_Photo.png';
+const photo =
+  'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/About_Photo.JPG';
+
 function About() {
   return (
     <section id="about">
@@ -10,7 +14,12 @@ function About() {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__image-bg">
-          <img src="" alt="About Image" className="about__image" />
+          <img
+            src={photo}
+            alt="About Image"
+            className="about__image"
+            crossOrigin=""
+          />
         </div>
         <div className="about__content">
           <div className="about__cards">
