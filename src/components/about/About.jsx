@@ -18,7 +18,7 @@ function About() {
             src={photo}
             alt="About Image"
             className="about__image"
-            crossOrigin=""
+            crossOrigin=" "
           />
         </div>
         <div className="about__content">
