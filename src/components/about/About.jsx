@@ -5,7 +5,7 @@ import { RiComputerFill } from 'react-icons/ri';
 
 // import photo from '../../assets/About_Photo.png';
 const photo =
-  'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/About_Photo.JPG';
+  'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/About_Photo_Purple.JPG';
 
 function About() {
   return (
