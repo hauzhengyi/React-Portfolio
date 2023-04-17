@@ -1,7 +1,6 @@
 import './about.css';
 import React from 'react';
 import { FaAward, FaFistRaised } from 'react-icons/fa';
-import { MdSchool } from 'react-icons/md';
 import { RiComputerFill } from 'react-icons/ri';
 
 function About() {
