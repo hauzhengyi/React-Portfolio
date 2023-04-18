@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.8rem;
+  padding: 0.5rem;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 2px 0 var(--color-shadow);
   border-radius: 2rem;
