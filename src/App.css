@@ -95,6 +95,11 @@ a:hover {
   color: var(--color-secondary);
 }
 
+button {
+  font: unset;
+  background: unset;
+}
+
 .btn {
   width: max-content;
   display: inline-block;
