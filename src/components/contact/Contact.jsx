@@ -1,5 +1,8 @@
 import './contact.css';
 import React from 'react';
+import { MdEmail } from 'react-icons/md';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { ImPhone } from 'react-icons/im';
 
 function Contact() {
   return (
@@ -10,6 +13,7 @@ function Contact() {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
+            <MdEmail className="contact__option-icon" />
             <h4>Email</h4>
             <a
               href="mailto:hauzhengyi@hotmail.com"
@@ -20,22 +24,20 @@ function Contact() {
             </a>
           </article>
           <article className="contact__option">
+            <IoLogoWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <a
               href="https://api.whatsapp.com/send?phone=60166731588"
               className="contact__whatsapp"
               target="blank"
             >
-              WhatsApp
+              Send Message
             </a>
           </article>
           <article className="contact__option">
+            <ImPhone className="contact__option-icon" />
             <h4>Phone</h4>
-            <a
-              href="tel:+60166731588"
-              className="contact__phone"
-              target="blank"
-            >
+            <a href="tel:+60166731588" className="contact__phone">
               +60166731588
             </a>
           </article>

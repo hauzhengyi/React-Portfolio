@@ -8,7 +8,7 @@
   background: var(--color-secondary-alt);
   border: 1px solid transparent;
   border-radius: 2rem;
-  padding: 2.4rem 4rem;
+  padding: 2.4rem 4rem 4rem;
   transition: var(--transition);
 }
 
@@ -25,16 +25,18 @@
 
 .skills__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 2rem;
 }
 
 .skills__details {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 .skills__details-icon {
+  font-size: 2rem;
   margin-top: 0.2rem;
   color: var(--color-accent);
 }
@@ -67,5 +69,15 @@
   .skills__container > div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .skills__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills__details {
+    flex-direction: column;
+    gap: revert;
+    text-align: center;
   }
 }
