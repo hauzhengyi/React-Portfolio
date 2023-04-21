@@ -1,10 +1,17 @@
 import './contact.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import { MdEmail } from 'react-icons/md';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { ImPhone } from 'react-icons/im';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    console.log(e);
+  };
+
   return (
     <section id="contact">
       <h5>Don't Hesitate To</h5>
@@ -42,12 +49,12 @@ function Contact() {
             </a>
           </article>
         </div>
-        <form action="">
-          <input type="name" name="name" placeholder="Your Name" required />
-          <input type="email" name="name" placeholder="Your Email" required />
+        <form ref="form" onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
           <textarea
-            type="email"
-            name="name"
+            type="text"
+            name="message"
             placeholder="Message"
             required
           ></textarea>
