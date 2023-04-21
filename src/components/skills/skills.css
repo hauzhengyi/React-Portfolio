@@ -1,6 +1,7 @@
 .skills__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-inline: 2rem;
   gap: 2rem;
 }
 
@@ -8,7 +9,7 @@
   background: var(--color-secondary-alt);
   border: 1px solid transparent;
   border-radius: 2rem;
-  padding: 2.4rem 4rem 4rem;
+  padding: 2.4rem 2rem 4rem;
   transition: var(--transition);
 }
 
@@ -46,6 +47,7 @@
 @media screen and (max-width: 1024px) {
   .skills__container {
     grid-template-columns: 1fr;
+    padding-inline: revert;
   }
 
   .skills__container > div {

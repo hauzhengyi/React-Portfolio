@@ -1,15 +1,41 @@
 import './contact.css';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { MdEmail } from 'react-icons/md';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { ImPhone } from 'react-icons/im';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 function Contact() {
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
-    console.log(e);
+    e.preventDefault();
+
+    setButtonDisabled(true);
+
+    emailjs
+      .sendForm(
+        'service_hzy26',
+        'template_hzy26',
+        form.current,
+        'xsiM1ymKktGkkWCXC'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Message sent. Thank you!');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Error: ' + error.text);
+        }
+      )
+      .finally(() => {
+        e.target.reset();
+        setButtonDisabled(false);
+      });
   };
 
   return (
@@ -49,7 +75,7 @@ function Contact() {
             </a>
           </article>
         </div>
-        <form ref="form" onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
@@ -58,7 +84,11 @@ function Contact() {
             placeholder="Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-cta">
+          <button
+            type="submit"
+            className="btn btn-cta contact__form-submit"
+            disabled={buttonDisabled}
+          >
             Send Message
           </button>
         </form>
