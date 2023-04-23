@@ -7,7 +7,7 @@ function Socials() {
   return (
     <div className="header__socials">
       <a
-        href="https://www.linkedin.com/in/zyhau/"
+        href="https://www.linkedin.com/in/zyhau"
         target="_blank"
         className="socials__linkedin"
       >
