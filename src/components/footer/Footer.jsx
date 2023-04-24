@@ -7,7 +7,9 @@ import { MdEmail } from 'react-icons/md';
 function Footer() {
   return (
     <footer>
-      <a href="#" className="footer__logo"></a>
+      <a href="#" className="footer__logo">
+        Zheng Yi
+      </a>
       <ul className="permalinks">
         <li>
           <a href="#">Home</a>

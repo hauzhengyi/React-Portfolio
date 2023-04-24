@@ -1,8 +1,8 @@
 .skills__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-inline: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  transition: var(--transition);
 }
 
 .skills__container > div {
@@ -40,6 +40,14 @@
   font-size: 2rem;
   margin-top: 0.2rem;
   color: var(--color-accent);
+}
+
+/* ============= MEDIA QUERIES (LG-MD) ============= */
+
+@media screen and (max-width: 1400px) {
+  .skills__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ============= MEDIA QUERIES (MD) ============= */

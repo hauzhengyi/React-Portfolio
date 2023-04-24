@@ -57,11 +57,11 @@ function Skills() {
               skill="jQuery"
               experience="Intermediate"
             />
-            <Skill
+            {/* <Skill
               icon={<SiTypescript />}
               skill="TypeScript"
               experience="Basic"
-            />
+            /> */}
           </div>
         </div>
         <div className="skills__backend">
