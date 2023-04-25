@@ -130,6 +130,7 @@ button {
 
 .btn-cta:hover,
 .btn-cta:disabled {
+  color: var(--color-primary);
   background: var(--color-secondary);
   border-color: transparent;
 }

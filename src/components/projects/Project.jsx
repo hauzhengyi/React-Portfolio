@@ -11,22 +11,22 @@ function Project({ project }) {
         {project.title + (project.ready ? '' : ' (Upcoming)')}
       </h3>
       <div className="project__cta">
-        <a
+        <button
           href={project.code}
           className="btn project__code"
           target="_blank"
           disabled={!project.ready}
         >
           Source Code
-        </a>
-        <a
+        </button>
+        <button
           href={project.demo}
           className="btn btn-cta project__demo"
           target="_blank"
           disabled={!project.ready}
         >
           Live Demo
-        </a>
+        </button>
       </div>
     </article>
   );

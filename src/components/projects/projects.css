@@ -5,6 +5,8 @@
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   background: var(--color-secondary-alt);
   padding: 1.3rem;
   border-radius: 2rem;
@@ -30,6 +32,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
+  margin-top: auto;
 }
 
 /* ============= MEDIA QUERIES (MD) ============= */
