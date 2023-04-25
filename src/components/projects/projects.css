@@ -27,6 +27,29 @@
 
 .project__cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+/* ============= MEDIA QUERIES (MD) ============= */
+
+@media screen and (max-width: 1024px) {
+  .projects__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project__code,
+  .project__demo {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ============= MEDIA QUERIES (sm) ============= */
+
+@media screen and (max-width: 600px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
 }
