@@ -78,7 +78,11 @@
 
   .skills__container > div {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .skills__container > div h3 {
+    margin-bottom: 0.5rem;
   }
 
   .skills__content {

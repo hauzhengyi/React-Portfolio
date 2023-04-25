@@ -46,9 +46,9 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--color-primary);
   color: var(--color-text);
   line-height: 1.7;
+  background: var(--color-primary);
 }
 
 /* ============= GENERAL STYLES ============= */
