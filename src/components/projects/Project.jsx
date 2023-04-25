@@ -1,16 +1,30 @@
 import './projects.css';
-import React from 'react';
+import React, { useState } from 'react';
 
-function Project() {
+function Project({ project }) {
   return (
     <article className="project">
-      <div className="project__image"></div>
-      <h3 className="project__title">Project Title</h3>
+      <div className="project__image">
+        <img src={project.image} alt="project image" crossOrigin="" />
+      </div>
+      <h3 className="project__title">
+        {project.title + (project.ready ? '' : ' (Upcoming)')}
+      </h3>
       <div className="project__cta">
-        <a href="" className="btn project__code" target="_blank">
+        <a
+          href={project.code}
+          className="btn project__code"
+          target="_blank"
+          disabled={!project.ready}
+        >
           Source Code
         </a>
-        <a href="" className="btn btn-cta project__demo" target="_blank">
+        <a
+          href={project.demo}
+          className="btn btn-cta project__demo"
+          target="_blank"
+          disabled={!project.ready}
+        >
           Live Demo
         </a>
       </div>
