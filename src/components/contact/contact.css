@@ -96,6 +96,11 @@ textarea:focus {
     flex-direction: column;
     gap: 2rem;
   }
+
+  input,
+  textarea {
+    font-size: medium;
+  }
 }
 
 /* ============= MEDIA QUERIES (sm) ============= */
