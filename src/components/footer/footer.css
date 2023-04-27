@@ -1,10 +1,24 @@
 footer {
-  background: var(--color-accent);
-  padding: 3rem 0;
-  margin-top: 7rem;
+  position: relative;
+  padding: 4rem 0;
+  margin-top: 10rem;
   text-align: center;
   font-size: 0.9rem;
   color: var(--color-primary);
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200vw;
+  height: 200vw;
+  translate: -50vw;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: var(--color-accent);
 }
 
 .footer__logo {
