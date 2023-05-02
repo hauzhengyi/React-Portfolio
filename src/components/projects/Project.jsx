@@ -8,9 +8,12 @@ const openLink = (link) => {
 function Project({ project }) {
   return (
     <article className="project">
-      <div className="project__image">
-        <img src={project.image} alt="project image" crossOrigin="" />
-      </div>
+      <img
+        src={project.image}
+        alt="project image"
+        className="project__image"
+        crossOrigin=""
+      />
       <h3 className="project__title">
         {project.title + (project.ready ? '' : ' (Upcoming)')}
       </h3>
