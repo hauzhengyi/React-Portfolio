@@ -36,7 +36,7 @@ function Projects() {
       <h2>Projects</h2>
       <div className="container projects__container">
         {projects.map((project) => {
-          return <Project id={project.id} project={project} />;
+          return <Project key={project.id} project={project} />;
         })}
       </div>
     </section>
