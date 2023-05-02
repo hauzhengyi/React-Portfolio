@@ -3,9 +3,9 @@ import './header.css';
 import CallToAction from './CallToAction';
 import Socials from './Socials';
 
-// import avatar from '../../assets/Avatar.png';
-const avatar =
-  'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/Avatar.png';
+import avatar from '../../assets/Avatar.png';
+// const avatar =
+//   'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/Avatar.png';
 
 function Header() {
   return (
