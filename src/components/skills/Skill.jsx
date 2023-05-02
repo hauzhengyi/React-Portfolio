@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Skill({ icon, skill, experience }) {
+function Skill({ icon, image, skill, experience }) {
   return (
     <article className="skills__details">
-      <div className="skills__details-icon">{icon}</div>
+      <img className="skills__details-icon" src={image} alt="" />
       <div>
         <h4>{skill}</h4>
         <small>{experience}</small>

@@ -37,9 +37,11 @@
 }
 
 .skills__details-icon {
-  font-size: 2rem;
-  margin-top: 0.2rem;
-  color: var(--color-accent);
+  height: 5rem;
+  width: 5rem;
+  align-self: center;
+  padding: 0.5rem;
+  object-fit: contain;
 }
 
 /* ============= MEDIA QUERIES (LG-MD) ============= */
