@@ -3,9 +3,7 @@ import React from 'react';
 import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { RiComputerFill } from 'react-icons/ri';
 
-import photo from '../../assets/About_Photo_Purple.jpg';
-// const photo =
-//   'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/About_Photo_Purple.JPG';
+import photo from '../../assets/About_Photo_Purple.jpeg';
 
 function About() {
   return (
