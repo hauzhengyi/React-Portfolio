@@ -3,7 +3,7 @@ import React from 'react';
 const CV =
   'https://raw.githubusercontent.com/hauzhengyi/React-Portfolio/main/src/assets/Hau_Zheng_Yi_CV.pdf';
 
-function CallToAction() {
+function CallToAction() { 
   return (
     <div className="callToAction header__calltoaction">
       <a
