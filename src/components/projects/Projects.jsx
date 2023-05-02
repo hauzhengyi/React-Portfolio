@@ -1,14 +1,15 @@
 import './projects.css';
 import React from 'react';
 import Project from './Project.jsx';
+import todo from '../../assets/react-todo-image.png';
 
 const projects = [
   {
     id: 'todo_list',
-    image: '',
+    image: todo,
     title: 'To-Do List',
-    code: '',
-    demo: '',
+    code: 'https://github.com/hauzhengyi/react-todo',
+    demo: 'https://hauzhengyi.github.io/react-todo/',
     ready: true,
   },
   {

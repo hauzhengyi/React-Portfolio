@@ -1,6 +1,10 @@
 import './projects.css';
 import React, { useState } from 'react';
 
+const openLink = (link) => {
+  window.open(link, '_blank');
+};
+
 function Project({ project }) {
   return (
     <article className="project">
@@ -12,7 +16,7 @@ function Project({ project }) {
       </h3>
       <div className="project__cta">
         <button
-          href={project.code}
+          onClick={() => openLink(project.code)}
           className="btn project__code"
           target="_blank"
           disabled={!project.ready}
@@ -20,7 +24,7 @@ function Project({ project }) {
           Source Code
         </button>
         <button
-          href={project.demo}
+          onClick={() => openLink(project.demo)}
           className="btn btn-cta project__demo"
           target="_blank"
           disabled={!project.ready}
