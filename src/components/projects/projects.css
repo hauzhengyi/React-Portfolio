@@ -18,6 +18,11 @@
   background: transparent;
 }
 
+.project:hover .project__image {
+  box-shadow: 0 0 5px 0 var(--color-shadow);
+  -webkit-box-shadow: 0 0 5px 0 var(--color-shadow);
+}
+
 .project__image {
   border-radius: 1.5rem;
   overflow: hidden;
