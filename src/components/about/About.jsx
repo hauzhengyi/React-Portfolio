@@ -2,11 +2,13 @@ import './about.css';
 import React, { useContext } from 'react';
 import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { RiComputerFill } from 'react-icons/ri';
-
+import { Theme } from '/src/App';
 import photoPurple from '../../assets/About_Photo_Purple.jpeg';
-import photoYellow from '../../assets/About_Photo_Yellow.jpeg'; 
+import photoYellow from '../../assets/About_Photo_Yellow.jpeg';
 
 function About() {
+  const [theme, setTheme] = useContext(Theme); 
+
   return (
     <section id="about">
       <h5>Get to Know</h5>
@@ -14,7 +16,7 @@ function About() {
       <div className="container about__container">
         <div className="about__image-bg">
           <img
-            src={photoPurple}
+            src={theme === 'dark' ? photoYellow : photoPurple}
             alt="About Image"
             className="about__image"
             crossOrigin=""
