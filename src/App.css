@@ -141,7 +141,7 @@ button {
   color: var(--color-primary);
 }
 
-.btn-cta:hover,
+.btn-cta:active,
 .btn-cta:disabled {
   color: var(--color-primary);
   background: var(--color-secondary);

@@ -1,5 +1,5 @@
 import './about.css';
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { RiComputerFill } from 'react-icons/ri';
 

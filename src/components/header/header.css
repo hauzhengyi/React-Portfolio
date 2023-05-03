@@ -13,7 +13,7 @@ header {
 /* ============= CALL TO ACTION ============= */
 
 .callToAction {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -39,8 +39,15 @@ header {
   background-color: var(--color-accent);
 }
 
-.header__socials a * {
+.header__socials a *,
+.header__darkmode a * {
   transition: none;
+}
+
+/* ============= DARK MODE ============= */
+
+.header__darkmode {
+  margin-top: 0.5rem;
 }
 
 /* ============= AVATAR ============= */
