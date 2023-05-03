@@ -7,7 +7,7 @@ import photoPurple from '../../assets/About_Photo_Purple.jpg';
 import photoYellow from '../../assets/About_Photo_Yellow.jpg';
 
 function About() {
-  const [theme, setTheme] = useContext(Theme);
+  const [theme, setTheme] = useContext(Theme); 
 
   return ( 
     <section id="about">
