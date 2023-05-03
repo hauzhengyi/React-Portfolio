@@ -9,7 +9,7 @@ import photoYellow from '../../assets/About_Photo_Yellow.jpg';
 function About() {
   const [theme, setTheme] = useContext(Theme);
 
-  return (
+  return ( 
     <section id="about">
       <h5>Get to Know</h5>
       <h2>About Me</h2>
