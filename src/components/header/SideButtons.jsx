@@ -2,33 +2,35 @@ import React from 'react';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import DarkMode from './Darkmode';
 
-function Socials() {
+function SideButtons() {
   return (
-    <div className="header__socials">
+    <div className="header__sidebuttons">
       <a
         href="https://www.linkedin.com/in/zyhau"
         target="_blank"
-        className="socials__linkedin"
+        className="sidebuttons__linkedin"
       >
         <BsLinkedin />
       </a>
       <a
         href="https://github.com/hauzhengyi"
         target="_blank"
-        className="socials__github"
+        className="sidebuttons__github"
       >
         <FaGithub />
       </a>
       <a
         href="mailto:hauzhengyi@hotmail.com"
         target="_blank"
-        className="socials__email"
+        className="sidebuttons__email"
       >
         <MdEmail />
       </a>
+      <DarkMode />
     </div>
   );
 }
 
-export default Socials;
+export default SideButtons;

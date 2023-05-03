@@ -16,11 +16,9 @@ function DarkMode() {
   };
 
   return (
-    <div className="header__darkmode">
-      <a href="#0" className="darkmode__icon" onClick={toggleTheme}>
-        {theme === 'dark' ? <ImSun /> : <HiMoon />}
-      </a>
-    </div>
+    <a href="#0" className="sidebutton__darkmode" onClick={toggleTheme}>
+      {theme === 'dark' ? <ImSun /> : <HiMoon />}
+    </a>
   );
 }
 
