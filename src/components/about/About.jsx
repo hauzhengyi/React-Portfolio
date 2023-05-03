@@ -4,7 +4,7 @@ import { FaAward, FaFistRaised } from 'react-icons/fa';
 import { RiComputerFill } from 'react-icons/ri';
 
 import photoPurple from '../../assets/About_Photo_Purple.jpeg';
-import photoYellow from '../../assets/About_Photo_Yellow.jpeg';
+import photoYellow from '../../assets/About_Photo_Yellow.jpeg'; 
 
 function About() {
   return (
