@@ -9,7 +9,7 @@ function DarkMode() {
   useEffect(() => {
     document.querySelector('body').setAttribute('data-theme', theme);
     localStorage.setItem('portfolio-zhengyi-theme', theme);
-  }, [theme]);
+  }, [theme]); 
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
