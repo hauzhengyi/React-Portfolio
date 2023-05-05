@@ -11,12 +11,12 @@ function DarkMode() {
     localStorage.setItem('portfolio-zhengyi-theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => { 
+  const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
-    <a href="#0" className="sidebutton__darkmode" onClick={toggleTheme}>
+    <a href="#0" className="sidebuttons__darkmode" onClick={toggleTheme}>
       {theme === 'dark' ? <ImSun /> : <HiMoon />}
     </a>
   );
