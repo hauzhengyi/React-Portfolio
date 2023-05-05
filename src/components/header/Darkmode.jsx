@@ -11,7 +11,7 @@ function DarkMode() {
     localStorage.setItem('portfolio-zhengyi-theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => {
+  const toggleTheme = () => { 
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
