@@ -9,7 +9,7 @@ const projects = [
   {
     id: 'todo_list',
     image: todo,
-    title: 'To-Do List',
+    title: 'To-Do List - React',
     code: 'https://github.com/hauzhengyi/react-todo',
     demo: 'https://hauzhengyi.github.io/react-todo/',
     ready: true,
@@ -17,10 +17,10 @@ const projects = [
   {
     id: 'pokedex',
     image: pokedex,
-    title: 'Pokedex',
-    code: '',
-    demo: '',
-    ready: false,
+    title: 'Pokedex - Vue',
+    code: 'https://github.com/hauzhengyi/vue-pokedex',
+    demo: 'https://hauzhengyi.github.io/vue-pokedex/',
+    ready: true,
   },
   {
     id: 'ecommerce',
