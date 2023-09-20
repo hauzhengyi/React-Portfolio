@@ -2,7 +2,7 @@ import './projects.css';
 import React from 'react';
 import Project from './Project.jsx';
 import todo from '../../assets/react-todo-image.png';
-import pokedex from '../../assets/pokedex-image.png';
+import pokedex from '../../assets/vue-pokedex-image.png';
 import ecommerce from '../../assets/ecommerce-image.png';
 
 const projects = [
