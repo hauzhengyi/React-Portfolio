@@ -23,6 +23,8 @@ import html from '../../assets/icons8-html-5.svg';
 import css from '../../assets/icons8-css3.svg';
 import javascript from '../../assets/icons8-javascript.svg';
 import react from '../../assets/icons8-react-native.svg';
+import vue from '../../assets/icons8-vuejs.svg';
+import nuxt from '../../assets/icons8-nuxt-js.svg';
 import bootstrap from '../../assets/icons8-bootstrap.svg';
 import jquery from '../../assets/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png';
 import php from '../../assets/php.svg';
@@ -57,6 +59,8 @@ function Skills() {
               experience="Experienced"
             />
             <Skill image={react} skill="React" experience="Intermediate" />
+            <Skill image={vue} skill="Vue" experience="Experienced" />
+            <Skill image={nuxt} skill="Nuxt" experience="Experienced" />
             <Skill
               image={bootstrap}
               skill="Bootstrap"
