@@ -7,15 +7,15 @@
 .project {
   display: flex;
   flex-direction: column;
-  background: var(--color-secondary-alt);
   padding: 1.3rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-secondary);
+  background: transparent;
 }
 
 .project:hover {
-  border-color: var(--color-secondary);
-  background: transparent;
+  border: 1px solid transparent;
+  background: var(--color-secondary-alt);
 }
 
 .project:hover .project__image {
