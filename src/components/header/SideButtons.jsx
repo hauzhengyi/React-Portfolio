@@ -7,6 +7,7 @@ import DarkMode from './Darkmode';
 function SideButtons() {
   return (
     <div className="header__sidebuttons">
+      <DarkMode />
       <a
         href="https://www.linkedin.com/in/zyhau"
         target="_blank"
@@ -28,7 +29,6 @@ function SideButtons() {
       >
         <MdEmail />
       </a>
-      <DarkMode />
     </div>
   );
 }

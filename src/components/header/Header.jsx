@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 import CallToAction from './CallToAction';
 import SideButtons from './SideButtons';
+import { IoIosArrowDropright } from 'react-icons/io';
 
 import avatar from '../../assets/Avatar.png';
 import DarkMode from './Darkmode';
@@ -24,6 +25,7 @@ function Header() {
 
         <a href="#contact" className="scroll__down">
           Scroll Down
+          <IoIosArrowDropright />
         </a>
       </div>
     </>

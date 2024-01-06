@@ -39,14 +39,54 @@ header {
   background-color: var(--color-accent);
 }
 
-.header__sidebuttons a *,
-.header__darkmode a * {
+.header__sidebuttons a * {
+  font-size: 1.2em;
   transition: none;
 }
 
 /* ============= DARK MODE ============= */
 
-.header__darkmode {
+.sidebuttons__bubble {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: max-content;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  translate: 0 -1.4rem;
+  cursor: pointer;
+  transform-origin: 0% 100%;
+  animation-name: bounceOut;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+.sidebuttons__bubble::before {
+  content: '';
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -16px;
+  left: 15px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--color-accent) transparent transparent var(--color-accent);
+  transform: rotate(10deg);
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: scale(0);
+  }
+  6% {
+    transform: scale(1.25);
+  }
+  12% {
+    transform: scale(1);
+  }
 }
 
 /* ============= AVATAR ============= */
@@ -67,12 +107,19 @@ header {
 /* ============= SCROLL DOWN ============= */
 
 .scroll__down {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-weight: 300;
-  font-size: 0.9em;
+}
+
+.scroll__down svg {
+  font-size: 1.2em;
+  transition: none;
 }
 
 /* ============= MEDIA QUERIES (MD) ============= */
@@ -89,6 +136,19 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
+  }
+
+  .header__sidebuttons {
+    gap: 0.7rem;
+  }
+
+  .sidebuttons__bubble {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .sidebuttons__bubble::before {
+    bottom: -14px;
+    border-width: 8px;
   }
 
   .avatar {
