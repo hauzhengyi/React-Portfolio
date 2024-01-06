@@ -15,7 +15,6 @@
 
 .skills__container > div:hover {
   background: var(--color-secondary-alt);
-  border: 1px solid transparent;
 }
 
 .skills__container > div h3 {

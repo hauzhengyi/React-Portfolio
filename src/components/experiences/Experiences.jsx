@@ -4,9 +4,16 @@ import Experience from './Experience';
 
 const experiences = [
   {
+    id: 'newsoft',
+    title: 'Frontend Engineer',
+    company: 'Newsoft',
+    date: 'October 2023',
+    detail: '',
+  },
+  {
     id: 'hytech',
     title: 'Software Engineer (Frontend)',
-    company: 'Hytech',
+    company: 'Hytech Consulting Management Sdn Bhd',
     date: 'June 2023',
     detail: '',
   },

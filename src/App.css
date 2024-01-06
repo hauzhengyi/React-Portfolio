@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-} 
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -23,8 +23,9 @@ html {
   --color-text: #363636;
   --color-text-light: #727272;
   --color-primary: #ffffff;
+  --color-primary-mask: #f1f3ff;
   --color-secondary: #9daafb;
-  --color-secondary-alt: #e7eaff;
+  --color-secondary-alt: #e7eaff99;
   --color-accent: #4b4bff;
   --color-accent-alt: #4baeff;
   --color-shadow: rgb(64, 64, 64, 0.4);
@@ -45,8 +46,9 @@ html {
   --color-text: #f0f0f0;
   --color-text-light: #a0a0a0;
   --color-primary: #1a1a1a;
+  --color-primary-mask: #212121;
   --color-secondary: #7e853a;
-  --color-secondary-alt: #202020;
+  --color-secondary-alt: #202020bb;
   --color-accent: #fcff4b;
   --color-accent-alt: #edff4b;
   --color-shadow: rgba(32, 32, 32, 0.4);
@@ -79,7 +81,7 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 section {

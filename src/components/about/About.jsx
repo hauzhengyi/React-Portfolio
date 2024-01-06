@@ -7,9 +7,9 @@ import photoPurple from '../../assets/About_Photo_Purple.jpg';
 import photoYellow from '../../assets/About_Photo_Yellow.jpg';
 
 function About() {
-  const [theme, setTheme] = useContext(Theme); 
+  const [theme, setTheme] = useContext(Theme);
 
-  return ( 
+  return (
     <section id="about">
       <h5>Get to Know</h5>
       <h2>About Me</h2>
@@ -37,7 +37,7 @@ function About() {
             <article className="about__card">
               <FaFistRaised className="about__icon" />
               <h5>Cooperative & Independent</h5>
-              <small>Solves problems with Minimal Help</small>
+              <small>Solves Problems with Minimal Help</small>
             </article>
           </div>
           <p>

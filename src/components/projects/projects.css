@@ -14,19 +14,20 @@
 }
 
 .project:hover {
-  border: 1px solid transparent;
   background: var(--color-secondary-alt);
 }
 
 .project:hover .project__image {
-  box-shadow: 0 0 5px 0 var(--color-shadow);
-  -webkit-box-shadow: 0 0 5px 0 var(--color-shadow);
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .project__image {
   border-radius: 1.5rem;
   overflow: hidden;
   aspect-ratio: 1/1;
+  box-shadow: 0 0 5px 0 var(--color-shadow);
+  -webkit-box-shadow: 0 0 5px 0 var(--color-shadow);
 }
 
 .project__title {
