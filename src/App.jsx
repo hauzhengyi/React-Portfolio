@@ -22,6 +22,7 @@ function App() {
       <div className="App">
         <Background />
         <Header />
+        
         <Nav />
         <About />
         <Experiences />
