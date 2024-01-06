@@ -14,7 +14,7 @@ export const Theme = React.createContext();
 
 function App() {
   const [theme, setTheme] = useState(
-    localStorage.getItem('portfolio-zhengyi-theme') || 'light'
+    localStorage.getItem('portfolio-zhengyi-theme') || 'dark'
   );
 
   const header = useRef(null);
