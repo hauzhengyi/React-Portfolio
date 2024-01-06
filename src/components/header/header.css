@@ -1,5 +1,6 @@
 header {
   height: 100vh;
+  min-height: 800px;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -127,7 +128,6 @@ header {
 @media screen and (max-width: 1024px) and (min-height: 900px) {
   header {
     height: 62vh;
-    min-height: 800px;
   }
 }
 
