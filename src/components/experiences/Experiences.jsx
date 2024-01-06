@@ -6,7 +6,7 @@ const experiences = [
   {
     id: 'newsoft',
     title: 'Frontend Engineer',
-    company: 'Newsoft',
+    company: 'Newsoft IT Solutions Sdn Bhd',
     date: 'October 2023',
     detail: '',
   },
