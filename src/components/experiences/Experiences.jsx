@@ -57,7 +57,7 @@ const experiences = [
 
 function Experiences() {
   return (
-    <section id="experiences">
+    <>
       <h5>Life is about</h5>
       <h2>Experiences</h2>
       <div className="container experiences__container">
@@ -68,7 +68,7 @@ function Experiences() {
           })}
         </div>
       </div>
-    </section>
+    </>
   );
 }
 

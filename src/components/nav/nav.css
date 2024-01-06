@@ -23,11 +23,24 @@ nav a {
   padding: 0.5rem;
   border-radius: 50%;
   display: flex;
-  font-size: 1.1em;
+  font-size: 1.8em;
   color: var(--color-text);
 }
 
-nav a:hover {
+nav a.active {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+nav a:not(.active):hover {
   background: var(--color-nav-hover);
   color: var(--color-primary);
+}
+
+/* ============= MEDIA QUERIES (sm) ============= */
+
+@media screen and (max-width: 600px) {
+  nav {
+    gap: 0.6rem;
+  }
 }

@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md';
 
 function Footer() {
   return (
-    <footer>
+    <>
       <a href="#" className="footer__logo">
         Zheng Yi
       </a>
@@ -56,7 +56,7 @@ function Footer() {
       <div className="footer__copyright">
         <small>&copy; Hau Zheng Yi. All rights reserved.</small>
       </div>
-    </footer>
+    </>
   );
 }
 

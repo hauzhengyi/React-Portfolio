@@ -34,7 +34,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects">
+    <>
       <h5>My Recent</h5>
       <h2>Projects</h2>
       <div className="container projects__container">
@@ -42,7 +42,7 @@ function Projects() {
           return <Project key={project.id} project={project} />;
         })}
       </div>
-    </section>
+    </>
   );
 }
 

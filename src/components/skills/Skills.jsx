@@ -44,7 +44,7 @@ import Skill from './Skill';
 
 function Skills() {
   return (
-    <section id="skills">
+    <>
       <h5>Always Sharpening My</h5>
       <h2>Skills</h2>
 
@@ -107,7 +107,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }
 

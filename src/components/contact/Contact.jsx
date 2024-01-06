@@ -17,7 +17,7 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_hzy26',
+        'service_hzy_outlook',
         'template_hzy26',
         form.current,
         'xsiM1ymKktGkkWCXC'
@@ -39,7 +39,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact">
+    <>
       <h5>Don't Hesitate To</h5>
       <h2>Contact Me</h2>
 
@@ -93,7 +93,7 @@ function Contact() {
           </button>
         </form>
       </div>
-    </section>
+    </>
   );
 }
 

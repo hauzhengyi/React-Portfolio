@@ -10,7 +10,7 @@ import DarkMode from './Darkmode';
 
 function Header() {
   return (
-    <header>
+    <>
       <div className="container header__container">
         <h5>Hello, I'm</h5>
         <h1>Zheng Yi</h1>
@@ -26,7 +26,7 @@ function Header() {
           Scroll Down
         </a>
       </div>
-    </header>
+    </>
   );
 }
 
